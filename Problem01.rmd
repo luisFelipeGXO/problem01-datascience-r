@@ -1,0 +1,72 @@
+---
+Data Science Training
+Problem 01
+---
+01) Create two variables, Ana and Paulo, and assign them the values of their ages, 8 and 12 years respectively. The variables must be of integer type. Print to the console "The girl is older" or "The boy is older" as the result of a logical test.
+```{r}
+# Creating the variables and assign them the values of their ages
+Ana <- 8L
+Paulo <- 12L
+# Verifing if the variables are integer type
+class(Ana)
+class(Paulo)
+# Creating the logical test that will verify if the girl or the boy is older
+logicaltest = ifelse(Ana > Paulo, "The girl is older", "The boy is older")
+# Printing into the console who is older
+logicaltest
+```
+
+02) BOD is an existing object in R. Check the class of this object.
+```{r}
+class(BOD)
+```
+
+03) Create a vector that stores numbers from 1 to 10 and then print the even values.
+```{r}
+X <- c(1,2,3,4,5,6,7,8,9,10)
+X
+class(X)
+```
+
+04) women is an existing dataframe in R. Print the last 10 lines.
+```{r}
+tail(women)
+```
+
+05) Use the R plot function to produce a graph of the Sepal.Width and Petal.Length attributes of the Iris dataset. The graph should only print lines 50 through 100.
+```{r}
+plot(
+  iris$Sepal.Width[50:100],
+  iris$Sepal.Length[50:100],
+  xlab = "Sepal Width",
+  ylab = "Petal Length",
+  main = "Iris dataset"
+)
+```
+
+06) Create two vectors of equal size, add the equivalent positions of the vectors, and print the result.
+```{r}
+# Creating the vectors of equal size
+v1 <- c(1,2,3)
+v2 <- c(4,5,6)
+# Adding the equivalent positions
+result <- v1 + v2
+# Printing the result
+result
+```
+
+07) Print the number of rows, columns, row names, and column names for the CO2 dataset.
+```{r}
+# Number of rows
+nrow(CO2)
+
+# Number of columns
+ncol(CO2)
+
+# Row names
+row.names(CO2)
+
+# Column names
+colnames(CO2)
+```
+
